@@ -4,9 +4,9 @@ $("#actor").click(function(){
     var actor = "<li class='item'><a href='/search?q=" + nameonn + "'><img class='wr' />" + nameonn + "</a></li>";
     $("textarea").val(actor).select();
     document.execCommand("copy");
-    $("#actor").text("ØªÙ… Ø§Ù„Ù†Ø³Ø®")
+    $(".actor").text("ØªÙ… Ø§Ù„Ù†Ø³Ø®")
     setTimeout(function(){
-        $("#actor").text("ØªÙˆÙ„ÙŠØ¯ ÙƒÙˆØ¯ Ø§Ù„Ù…Ù…Ø«Ù„");
+        $(".actor").text("ØªÙˆÙ„ÙŠØ¯ ÙƒÙˆØ¯ Ø§Ù„Ù…Ù…Ø«Ù„");
     },2000);
     $(".nameOfhh").val("");
 })
